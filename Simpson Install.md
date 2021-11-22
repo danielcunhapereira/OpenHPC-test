@@ -22,6 +22,9 @@ cd /usr/local/bin
 vi simpson
 
 #!/bin/sh
+
 #export TCL_LIBRARY=/usr/share/simpson/tcl8.6
+
 #export LD_LIBRARY_PATH=/usr/share/simpson
+
 /usr/share/simpson/simpson4.2.1 "$@"
