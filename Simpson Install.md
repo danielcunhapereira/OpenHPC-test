@@ -32,4 +32,14 @@
 
     yum install lapack-3.8.0-8.el8.i686
     
-# 
+#Yet again, if you try to run simpson test.in you will be faced with another error. This time 'undefined symbol: cblas_zgemv'. This is caused by a missing cblas layer on top of BLAS library. You can check what is you version of ATLAS. Recent versions (CentOS7 and CentOS8) do not contain 'libcblas.so.3'. You can change the current version of ATLAS for an older one which contains 'libcblas.so.3', example - 'atlas-3.8.3-5.1.x86_64'. 
+
+    yum remove atlas
+    yum intall ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/strohel/openSUSE_Tumbleweed/x86_64/atlas-3.8.3-5.1.x86_64.rpm
+    
+#Now you can test your test.in file with simpson. 
+    
+    cd Simpson\ Setup\ Linux\ 4.2.1/
+    simpson test.in
+
+#The run should output a 'test.spe'. Happy simulations!
