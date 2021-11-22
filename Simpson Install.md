@@ -23,3 +23,13 @@
         #export TCL_LIBRARY=/usr/share/simpson/tcl8.6
         #export LD_LIBRARY_PATH=/usr/share/simpson
         /usr/share/simpson/simpson4.2.1 "$@"
+        
+#Now you will be encoutered with an error related with a missing librarie package 'liblapack.so.3'. Run the following lines
+    
+    yum provides '*/liblapack.so.3*'
+    
+#Install the match package 
+
+    yum install lapack-3.8.0-8.el8.i686
+    
+# 
