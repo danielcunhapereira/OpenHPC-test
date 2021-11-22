@@ -12,4 +12,5 @@ tar -xvf Simpson_Setup_Linux_4.2.1.tbz2
 #install SIMPSON
 
 cd Simpson\ Setup\ Linux\ 4.2.1/
+
 ./install.sh
