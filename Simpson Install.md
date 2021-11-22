@@ -21,10 +21,10 @@ cd /usr/local/bin
 
 vi simpson
 
-#!/bin/sh
+    #!/bin/sh
 
-#export TCL_LIBRARY=/usr/share/simpson/tcl8.6
+    #export TCL_LIBRARY=/usr/share/simpson/tcl8.6
 
-#export LD_LIBRARY_PATH=/usr/share/simpson
+    #export LD_LIBRARY_PATH=/usr/share/simpson
 
-/usr/share/simpson/simpson4.2.1 "$@"
+    /usr/share/simpson/simpson4.2.1 "$@"
