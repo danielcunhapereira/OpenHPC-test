@@ -14,3 +14,14 @@ tar -xvf Simpson_Setup_Linux_4.2.1.tbz2
 cd Simpson\ Setup\ Linux\ 4.2.1/
 
 ./install.sh
+
+#Now you will be encoutered with an error related with outdated libraries. Comment the two first lines of simpson file
+
+cd /usr/local/bin
+
+vi simpson
+
+#!/bin/sh
+#export TCL_LIBRARY=/usr/share/simpson/tcl8.6
+#export LD_LIBRARY_PATH=/usr/share/simpson
+/usr/share/simpson/simpson4.2.1 "$@"
