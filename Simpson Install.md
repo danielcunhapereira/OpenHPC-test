@@ -12,5 +12,6 @@ BINDIR="/usr/local/bin"
 LIBDIR="/usr/share/simpson"
 
 #install SIMPSON
+
 cd Simpson\ Setup\ Linux\ 4.2.1/
 ./install.sh
