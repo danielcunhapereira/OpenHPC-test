@@ -9,12 +9,13 @@
 #by default simpson installation will direct the binary installation dir as BINDIR="/usr/local/bin" and Library installation dir as LIBDIR="/usr/share/simpson"
 
 #install SIMPSON
+
         cd Simpson\ Setup\ Linux\ 4.2.1/
         ./install.sh
 
 #Now you will be encoutered with an error related with outdated libraries. Comment the two first lines of simpson file
 
-cd /usr/local/bin
+    cd /usr/local/bin
 
 vi simpson
 
